@@ -24,6 +24,19 @@ export class UsersService {
     ];
   }
 
+  getUsersPostsComments() {
+    return [
+      {
+        id: 1,
+        title: 'First Post',
+        content: 'This is the first post',
+        comments: [
+          { id: 1, content: 'Great post!' },
+          { id: 2, content: 'Thanks for sharing!' },
+        ],
+      },
+    ];
+  }
   findOne(id: number) {
     return `This action returns a #${id} user`;
   }

@@ -20,6 +20,10 @@ export class UsersController {
   getUsersPosts() {
     return this.usersService.getUsersPosts();
   }
+  @Get('posts/comments')
+  getUsersPostsComments() {
+    return this.usersService.getUsersPostsComments();
+  }
 
   @Get(':id')
   findOne(@Param('id', ParseIntPipe) id: number) {
